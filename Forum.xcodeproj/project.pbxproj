@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CBB6A26EAA79B3A83E6BA0F /* Pods_Forum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC06B876E9230420686FBE8 /* Pods_Forum.framework */; };
+		A61EC35B20015F7900A1BD79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61EC35A20015F7900A1BD79 /* GoogleService-Info.plist */; };
+		A6543DAB20007F2300B437CF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6543DAA20007F2300B437CF /* Message.swift */; };
+		A6543DAD200130BD00B437CF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6543DAC200130BD00B437CF /* TableViewCell.swift */; };
 		A6F1D47E20007C0A00226737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1D47D20007C0A00226737 /* AppDelegate.swift */; };
 		A6F1D48020007C0A00226737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1D47F20007C0A00226737 /* ViewController.swift */; };
 		A6F1D48320007C0A00226737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F1D48120007C0A00226737 /* Main.storyboard */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259A73BB6BB47E3F70CBFA53 /* Pods-Forum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forum/Pods-Forum.debug.xcconfig"; sourceTree = "<group>"; };
+		9A78E78A77DE5CD1CD92E60F /* Pods-Forum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forum/Pods-Forum.release.xcconfig"; sourceTree = "<group>"; };
+		A61EC35A20015F7900A1BD79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6543DAA20007F2300B437CF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A6543DAC200130BD00B437CF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A6F1D47A20007C0A00226737 /* Forum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1D47D20007C0A00226737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6F1D47F20007C0A00226737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		A6F1D48420007C0A00226737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F1D48720007C0A00226737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6F1D48920007C0A00226737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC06B876E9230420686FBE8 /* Pods_Forum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBB6A26EAA79B3A83E6BA0F /* Pods_Forum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002F7551DF05260A1F6FC987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC06B876E9230420686FBE8 /* Pods_Forum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A69B9B7B089B62DC291DFFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259A73BB6BB47E3F70CBFA53 /* Pods-Forum.debug.xcconfig */,
+				9A78E78A77DE5CD1CD92E60F /* Pods-Forum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6F1D47120007C0A00226737 = {
 			isa = PBXGroup;
 			children = (
 				A6F1D47C20007C0A00226737 /* Forum */,
 				A6F1D47B20007C0A00226737 /* Products */,
+				8A69B9B7B089B62DC291DFFB /* Pods */,
+				002F7551DF05260A1F6FC987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +86,13 @@
 			children = (
 				A6F1D47D20007C0A00226737 /* AppDelegate.swift */,
 				A6F1D47F20007C0A00226737 /* ViewController.swift */,
+				A6543DAC200130BD00B437CF /* TableViewCell.swift */,
+				A6543DAA20007F2300B437CF /* Message.swift */,
 				A6F1D48120007C0A00226737 /* Main.storyboard */,
 				A6F1D48420007C0A00226737 /* Assets.xcassets */,
 				A6F1D48620007C0A00226737 /* LaunchScreen.storyboard */,
 				A6F1D48920007C0A00226737 /* Info.plist */,
+				A61EC35A20015F7900A1BD79 /* GoogleService-Info.plist */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6F1D48C20007C0A00226737 /* Build configuration list for PBXNativeTarget "Forum" */;
 			buildPhases = (
+				02F4C6B23D8324F4563E7C45 /* [CP] Check Pods Manifest.lock */,
 				A6F1D47620007C0A00226737 /* Sources */,
 				A6F1D47720007C0A00226737 /* Frameworks */,
 				A6F1D47820007C0A00226737 /* Resources */,
+				9CA9CC5F03FE1C4B6CCFCE85 /* [CP] Embed Pods Frameworks */,
+				FC706584DEA311A1ADDBB08A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F1D48820007C0A00226737 /* LaunchScreen.storyboard in Resources */,
+				A61EC35B20015F7900A1BD79 /* GoogleService-Info.plist in Resources */,
 				A6F1D48520007C0A00226737 /* Assets.xcassets in Resources */,
 				A6F1D48320007C0A00226737 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +168,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02F4C6B23D8324F4563E7C45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Forum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA9CC5F03FE1C4B6CCFCE85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Forum/Pods-Forum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forum/Pods-Forum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC706584DEA311A1ADDBB08A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Forum/Pods-Forum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6F1D47620007C0A00226737 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6543DAB20007F2300B437CF /* Message.swift in Sources */,
+				A6543DAD200130BD00B437CF /* TableViewCell.swift in Sources */,
 				A6F1D48020007C0A00226737 /* ViewController.swift in Sources */,
 				A6F1D47E20007C0A00226737 /* AppDelegate.swift in Sources */,
 			);
@@ -272,12 +369,14 @@
 		};
 		A6F1D48D20007C0A00226737 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259A73BB6BB47E3F70CBFA53 /* Pods-Forum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96R6M3RGVJ;
 				INFOPLIST_FILE = Forum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = example.Forum;
+				PRODUCT_BUNDLE_IDENTIFIER = example.Forum1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,12 +385,14 @@
 		};
 		A6F1D48E20007C0A00226737 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A78E78A77DE5CD1CD92E60F /* Pods-Forum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96R6M3RGVJ;
 				INFOPLIST_FILE = Forum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = example.Forum;
+				PRODUCT_BUNDLE_IDENTIFIER = example.Forum1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
